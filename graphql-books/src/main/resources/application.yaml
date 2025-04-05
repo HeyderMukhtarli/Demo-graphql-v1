@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: graphql-books
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+  graphql:
+    graphiql:
+      enabled: true
+#  threads:
+#    virtual:
+#      enabled: true
+
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/books
+    username: password
+    password: admin
+
+server:
+  port: 8081
